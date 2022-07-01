@@ -31,7 +31,8 @@
       ```
       This command will output a static Storybook in the storybook-static directory, which can then be deployed to any static site hosting service.
     2. Publish Storybook
-    3. 
+         - Chromatic     
+         - CI: github Action
 5. Visual Testing
 
 <p align="center">
