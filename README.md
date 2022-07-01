@@ -4,8 +4,35 @@
 
 1. A helper library for developing UI components,
 2. Mock Service Worker (msw) can be used to mock http requests,
-3. Support auto testing
+3. Testing
+   1. manual: 
+      1. story's args shown in Storybook UI's 'Controls' tab
+      2. storybook's play function (only run when openning the story)
 
+   2. auto: 
+      test runner powered by Playwright
+      1. yarn add --dev @storybook/test-runner
+      2. update your package.json scripts and add a new test task:
+          ```json
+          {
+            "scripts": {
+              "test-storybook": "test-storybook"
+            }
+          }
+          ``` 
+      3. Finally, with your Storybook running, open up a new terminal window and run the following command:
+          ```bash
+            yarn test-storybook --watch
+          ```
+4. Deploy for teammates' reference
+   1. Exporting as a static app
+      ```bash
+      yarn build-storybook
+      ```
+      This command will output a static Storybook in the storybook-static directory, which can then be deployed to any static site hosting service.
+    2. Publish Storybook
+    3. 
+5. Visual Testing
 
 <p align="center">
   <a href="https://www.chromatic.com/">
