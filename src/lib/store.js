@@ -57,12 +57,11 @@ const TasksSlice = createSlice({
         state.tasks[task].state = newTaskState;
       }
     },
-  }
+  },
   /*
    * Extends the reducer for the async actions
    * You can read more about it at https://redux-toolkit.js.org/api/createAsyncThunk
-   */,
-  extraReducers(builder) {
+   */ extraReducers(builder) {
     builder
       .addCase(fetchTasks.pending, (state) => {
         state.status = "loading";

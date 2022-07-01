@@ -1,5 +1,6 @@
 import React from "react";
-
+import { rest } from "msw";
+import { MockedState } from "./TaskList.stories";
 import InboxScreen from "./InboxScreen";
 import store from "../lib/store";
 
@@ -14,4 +15,29 @@ export default {
 const Template = () => <InboxScreen />;
 
 export const Default = Template.bind({});
+Default.parameters = {
+  msw: {
+    handlers: [
+      rest.get(
+        "https://jsonplaceholder.typicode.com/todos?userId=1",
+        (req, res, ctx) => {
+          return res(ctx.json(MockedState.tasks));
+        }
+      ),
+    ],
+  },
+};
+
 export const Error = Template.bind({});
+Error.parameters = {
+  msw: {
+    handlers: [
+      rest.get(
+        "https://jsonplaceholder.typicode.com/todos?userId=1",
+        (req, res, ctx) => {
+          return res(ctx.status(403));
+        }
+      ),
+    ],
+  },
+};
