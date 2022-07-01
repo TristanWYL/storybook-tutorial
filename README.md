@@ -1,3 +1,12 @@
+<h1 align="center">
+  Overview about storybook
+</h1>
+
+1. A helper library for developing UI components,
+2. Mock Service Worker (msw) can be used to mock http requests,
+3. Support auto testing
+
+
 <p align="center">
   <a href="https://www.chromatic.com/">
     <img alt="Chromatic" src="https://avatars2.githubusercontent.com/u/24584319?s=200&v=4" width="60" />
