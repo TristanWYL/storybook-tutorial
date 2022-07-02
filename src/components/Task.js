@@ -46,7 +46,7 @@ export default function Task({
           readOnly={true}
           name="title"
           placeholder="Input title"
-          style={{ background: "red" }}
+          style={{ textOverflow: "ellipsis" }}
         />
       </label>
 
