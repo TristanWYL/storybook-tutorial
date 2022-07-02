@@ -2,6 +2,11 @@
   Overview about storybook
 </h1>
 
+<h2>
+  Some notes
+</h2>
+
+
 1. A helper library for developing UI components,
 2. Mock Service Worker (msw) can be used to mock http requests,
 3. Testing
@@ -30,10 +35,16 @@
       yarn build-storybook
       ```
       This command will output a static Storybook in the storybook-static directory, which can then be deployed to any static site hosting service.
-    2. Publish Storybook
+    1. Publish Storybook
          - Chromatic     
          - CI: github Action
 5. Visual Testing
+
+<h2>
+  Some questions
+</h2>
+
+1. how to render stories for mobile?
 
 <p align="center">
   <a href="https://www.chromatic.com/">
