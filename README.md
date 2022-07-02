@@ -12,7 +12,7 @@
 3. Testing
    1. manual: 
       1. story's args shown in Storybook UI's 'Controls' tab
-      2. storybook's play function (only run when openning the story)
+      2. interaction: storybook's play function (only run when openning the story)
 
    2. auto: 
       test runner powered by Playwright
@@ -39,6 +39,7 @@
          - Chromatic     
          - CI: github Action
 5. Visual Testing
+   1. visual regression: compare the visual difference between two commits
 
 <h2>
   Some questions
